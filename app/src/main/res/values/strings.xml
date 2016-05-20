@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+   <string name="pref_sortorder_label_popular">Popularity</string>
+    <string name="pref_sortorder_label_rating">Rating</string>
+    <string name="pref_sortorder_label_Favorites">Favorites</string>
+
+    <string name="pref_sortorder_popular">popularity</string>
+    <string name="pref_sortorder_rating">vote_average</string>
+    <string name="pref_sortorder_Favorites">Favorites</string>
+
+    <string name="pref_sortorder_label">Sort order</string>
+    <string name="pref_sortorder_key">Sort order</string>
+
+    <string name="pref_sortorder_default">popularity</string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="Release_Date">"Release Date"</string>
+
+    <string name="label_movie_trailer">Trailers</string>
+    <string name="content_authority">com.example.sunitha.popularmovies.app</string>
+
+    <string name="action_share">Share</string>
+
+</resources>

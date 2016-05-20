@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DetailFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/list_item_originaltitle_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_light"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/MovieDetails">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                    android:id="@+id/list_item_movie_poster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/list_item_vote_average_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+                            android:background="#FFFFBB33"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textAppearance="?android:textAppearanceLarge"
+                            />
+
+                        <TextView
+                            android:id="@+id/list_item_releasedate_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFBB33"
+                            android:layout_marginTop="@dimen/activity_horizontal_margin"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textAppearance="?android:textAppearanceLarge"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/star"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:id="@+id/ButtonFavorite"
+                            android:drawablePadding="-15sp"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin"
+                            android:text="Add to Favorites"
+                            android:onClick="addToFavorites"/>
+                    </LinearLayout>
+                </LinearLayout>
+        <TextView
+            android:id="@+id/list_item_overview_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/list_item_trailer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/holo_red_light"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/trailorListView"
+                />
+
+        <TextView
+            android:id="@+id/list_item_reviews_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-condensed"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/holo_red_light"
+            />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewListView"
+            android:textColor="@android:color/white"
+            />
+     </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
